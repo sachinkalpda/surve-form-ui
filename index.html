@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <header>
+            <h2>Survey Form</h2>
+            <p>Feel free to answer the question below base on your own experience and opinion. If you are not convenient in answering a particular question please skip it by answering "no". Every answer would be very appreciated. Thank you for your time.</p>
+        </header>
+        <main>
+            <section>
+                <form>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" placeholder="Enter Your Name"
+                                    class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" email="email" id="email" placeholder="user@user.com"
+                                    class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Your Phone</label>
+                                <input type="text" phone="phone" id="phone" placeholder="9999999999"
+                                    class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Where Do You Live</label>
+                                <select name="live" id="name" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="">Punjab</option>
+                                    <option value="">Haryana</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>Age</legend>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group-inline">
+                                                <input type="radio" name="age" id="age-1" value="15-20" />
+                                                <label for="age-1">15-20</label>
+                                            </div>
+                                            <div class="form-group-inline">
+                                                <input type="radio" name="age" id="age-1" value="20-30" />
+                                                <label for="age-1">20-30</label>
+                                            </div>
+                                            <div class="form-group-inline">
+                                                <input type="radio" name="age" id="age-1" value="31-40" />
+                                                <label for="age-1">31-40</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group-inline">
+                                                <input type="radio" name="age" id="age-1" value="41-50" />
+                                                <label for="age-1">41-50</label>
+                                            </div>
+                                            <div class="form-group-inline">
+                                                <input type="radio" name="age" id="age-1" value="prefer not to say" />
+                                                <label for="age-1">Prefer Not to Say</label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
+                                <label for="proficiency">How Would You Rate Your Proficiency in Coding?</label>
+                                <div class="form-group-inline">
+                                    <input type="radio" name="prof" id="prof-1" />
+                                    <label for="prof-1">Beginner</label>
+                                </div>
+                                <div class="form-group-inline">
+                                    <input type="radio" name="prof" id="prof-2" checked />
+                                    <label for="prof-2">Intermediate</label>
+                                </div>
+                                <div class="form-group-inline">
+                                    <input type="radio" name="prof" id="prof-3" />
+                                    <label for="prof-3">Advanced</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="proficiency">Have You Appeared in Coding Test?</label>
+                                <div class="form-group-inline">
+                                    <input type="radio" name="apperead" id="apperead-1" />
+                                    <label for="apperead-1">Yes</label>
+                                </div>
+                                <div class="form-group-inline">
+                                    <input type="radio" name="apperead" id="apperead-2" checked />
+                                    <label for="apperead-2">No</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback">Discuss what drives your passion for coding and outline your
+                                    aspiration in field?</label>
+                                <textarea id="feedback" name="feedback" class="form-control" rows="6"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="challanges">What are some of challanges you face while coding?</label>
+                                <textarea id="challanges" name="challanges" class="form-control" rows="6"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="understanding">Please list the Data structure you have a strong
+                                    understanding?</label>
+                                <textarea id="understanding" name="understanding" class="form-control"
+                                    rows="6"></textarea>
+                            </div>
+                            <button class="btn">Submit Form</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
